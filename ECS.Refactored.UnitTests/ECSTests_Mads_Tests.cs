@@ -108,7 +108,7 @@ namespace ECS.Refactored.UnitTests
 
             ecs.Regulate(); //Will turn heater off because temp > threshold
 
-            fakeHeaterMock.Received().TurnOn();
+            fakeHeaterMock.Received().TurnOff();
         }
 
         #endregion
