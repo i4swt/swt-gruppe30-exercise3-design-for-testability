@@ -1,5 +1,17 @@
-﻿namespace ECS.Refactored
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ECS.NewDesign
 {
+    public interface IHeater
+    {
+        void TurnOn();
+        void TurnOff();
+    }
+
     public class Heater : IHeater
     {
         public void TurnOn()
@@ -10,11 +22,6 @@
         public void TurnOff()
         {
             System.Console.WriteLine("Heater is off");
-        }
-
-        public bool RunSelfTest()
-        {
-            return true;
         }
     }
 }
