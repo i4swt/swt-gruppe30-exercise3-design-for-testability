@@ -52,7 +52,6 @@ namespace ECS.Test.Unit
             ts=new FakeTempSensor();
             fh=new FakeHeater();
             uut = new NewDesign.ECS(10, ts, fh);
-
         }
 
         [Test]
